@@ -20,6 +20,7 @@ function App() {
     };
 
     // TODO: Create recipe state
+    const [recipe, setRecipe] = useState(initialRecipe);
 
     // TODO: Add new state property
 
@@ -32,6 +33,7 @@ function App() {
             <h1>Recipe Manager</h1>
 
             {/* TODO: Pass recipe metadata to RecipeTitle */}
+            <RecipeTitle title={recipe.title} feedback={recipe.feedback} />
 
             {/* TODO: Pass ingredients and event listener to IngredientList */}
 
